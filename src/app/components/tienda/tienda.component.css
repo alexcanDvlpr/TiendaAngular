@@ -1,0 +1,46 @@
+.prodcutosContenedor {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.producto {
+	cursor: pointer;
+	width: 30%;
+	margin: 10px;
+}
+
+.desc {
+	width: 100%;
+	height: 100px;
+	overflow-y: scroll;
+}
+
+.desc::-webkit-scrollbar {
+	width: 0px;
+}
+
+.foot {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.stock {
+	color: green;
+	font-weight: bold;
+}
+
+.no-stock {
+	color: red;
+	font-weight: bold;
+	text-decoration:line-through;
+}
+
+
+

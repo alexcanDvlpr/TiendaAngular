@@ -1,0 +1,72 @@
+.contenedorLogin {
+	width: 80%;
+	background-color: #A1C0DE;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.container	{
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.img {
+	width: 50%;
+	height: 100%;
+}
+
+.img-login {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.formulario {
+	width: 50%;
+	padding: 25px;
+}
+
+.modalPubli {
+	position: absolute;
+	right: -300px;
+	bottom: 0px;
+	width: 15%;
+	height: 350px;
+	display: none;
+}
+
+.publi {
+	position: relative;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.img-publi {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.appear {
+	display: block;
+	animation-duration: 2s;
+	animation-name: appear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+	0% { right: -300px; }
+	100% { right: 3px; }
+}

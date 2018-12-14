@@ -1,0 +1,43 @@
+<div class="container main-container">
+	
+	<h1 class="text-center">Emezon</h1>
+
+	<div class="prodcutosContenedor">
+		
+		<div class="card producto" (click)="abrirModal(producto);" *ngFor="let producto of productos">
+		  <img class="card-img-top" src="/assets/imgs/publi.jpg" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ producto.data.nombre }}</h5>
+		    <div class="desc">
+		    	<p class="card-text">{{ producto.data.descripcion }}</p>
+		    </div>
+		    <div class="foot">
+		    	<button (click)="getProduct(producto);" class="btn btn-primary">{{ producto.data.precio }}€</button>
+		    	<span *ngIf="producto.data.stock" class="stock">En Stock</span>
+		    	<span *ngIf="!producto.data.stock" class="no-stock">En Stock</span>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>

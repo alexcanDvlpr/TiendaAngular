@@ -1,0 +1,23 @@
+.contenedores {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.caja {
+	width: 35%;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+}
+
+.caja > i {
+	font-size: 55px;
+	font-weight: bold;
+	margin-top: 20px;
+}
